@@ -5,8 +5,8 @@ https://github.com/ryancdotorg/brainflayer<br>
 
 ### bitcoin puzzle
 pip3 install bit<br>
-python3 puzzle.py \<bit\><br>
-example for 66 bit puzzle:<br>
+python3 puzzle.py \< bit \><br>
+example for 66 bit puzzle :<br>
 ```
 python3 puzzle.py 66
 0000000000000000000000000000000000000000000000034f7030c8aaf422e7
@@ -15,5 +15,20 @@ python3 puzzle.py 66
 0000000000000000000000000000000000000000000000028da2e6c49a202655
 ...
 python3 puzzle 66 | ./brainflayer -v -c c -b 66.blf -t priv -x -o output.txt
-Rate:   9038.34 p/s found:     0/24576      elapsed:    2.594 s
+rate:   9038.34 p/s found:     0/24576      elapsed:    2.594 s
+...
+```
+### mnemonics word
+python3 mnemonics.py \< number of mnemonics word \><br>
+example for 12 mnemonics word :<br>
+```
+python3 mnemonics.py 12
+picture waste cruel riot lady lift venture path erode sauce narrow expose
+angry final exotic raccoon stable sibling start shoe leopard salon bag knife
+wool horn jar only curtain sail journey fog come dentist boss aunt
+brisk card hazard theme patch badge text slab absurd donate predict where
+...
+python3 mnemonics.py 12 | ./brainflayer -v -b btc-addess.blf -o output.txt
+rate:  23744.46 p/s found:     0/49152      elapsed:    2.097 s
+...
 ```
