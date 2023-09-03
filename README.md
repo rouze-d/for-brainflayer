@@ -32,3 +32,16 @@ python3 mnemonics.py 12 | ./brainflayer -v -b btc-addess.blf -o output.txt
 rate:  23744.46 p/s found:     0/49152      elapsed:    2.097 s
 ...
 ```
+### minikey
+python3 minikey.py \< 22 | 30 \><br>
+example for 22 minikey :<br>
+```
+python3 minikey.py 22
+SXmQMA5szCKoPkhfu3i8G4
+S4G8i3ufhkPoKCzs5AMQmX
+SsuTCqJDwVX536dFRyUkSn
+SnSkUyRFd635XVwDJqCTus
+...
+python3 minikey.py 22 | ./brainflayer -v -b minikey.blf -o output.txt
+rate:  23744.46 p/s found:     0/49152      elapsed:    2.097 s
+```
